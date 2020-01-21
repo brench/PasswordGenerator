@@ -65,5 +65,10 @@ namespace PasswordGenerator
         {
             this.Close();
         }
+
+        private void txtAllowedCharacters_TextChanged(object sender, EventArgs e)
+        {
+            _allowedCharacters = txtAllowedCharacters.Text.Split();
+        }
     }
 }

@@ -42,10 +42,10 @@
             // 
             // btnGeneratePassword
             // 
-            this.btnGeneratePassword.Location = new System.Drawing.Point(39, 16);
-            this.btnGeneratePassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGeneratePassword.Location = new System.Drawing.Point(58, 25);
+            this.btnGeneratePassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnGeneratePassword.Name = "btnGeneratePassword";
-            this.btnGeneratePassword.Size = new System.Drawing.Size(100, 57);
+            this.btnGeneratePassword.Size = new System.Drawing.Size(150, 89);
             this.btnGeneratePassword.TabIndex = 0;
             this.btnGeneratePassword.Text = "Generate Password";
             this.btnGeneratePassword.UseVisualStyleBackColor = true;
@@ -53,23 +53,23 @@
             // 
             // txtGeneratedPassword
             // 
-            this.txtGeneratedPassword.Location = new System.Drawing.Point(259, 20);
-            this.txtGeneratedPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGeneratedPassword.Location = new System.Drawing.Point(388, 31);
+            this.txtGeneratedPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtGeneratedPassword.Name = "txtGeneratedPassword";
-            this.txtGeneratedPassword.Size = new System.Drawing.Size(247, 22);
+            this.txtGeneratedPassword.Size = new System.Drawing.Size(368, 31);
             this.txtGeneratedPassword.TabIndex = 1;
             // 
             // numPasswordLength
             // 
-            this.numPasswordLength.Location = new System.Drawing.Point(259, 105);
-            this.numPasswordLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numPasswordLength.Location = new System.Drawing.Point(388, 164);
+            this.numPasswordLength.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.numPasswordLength.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numPasswordLength.Name = "numPasswordLength";
-            this.numPasswordLength.Size = new System.Drawing.Size(160, 22);
+            this.numPasswordLength.Size = new System.Drawing.Size(240, 31);
             this.numPasswordLength.TabIndex = 2;
             this.numPasswordLength.Value = new decimal(new int[] {
             12,
@@ -80,24 +80,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 107);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(58, 167);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 17);
+            this.label1.Size = new System.Drawing.Size(178, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Password Length";
             // 
             // numSpecialCharacters
             // 
-            this.numSpecialCharacters.Location = new System.Drawing.Point(259, 142);
-            this.numSpecialCharacters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numSpecialCharacters.Location = new System.Drawing.Point(388, 222);
+            this.numSpecialCharacters.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.numSpecialCharacters.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numSpecialCharacters.Name = "numSpecialCharacters";
-            this.numSpecialCharacters.Size = new System.Drawing.Size(160, 22);
+            this.numSpecialCharacters.Size = new System.Drawing.Size(240, 31);
             this.numSpecialCharacters.TabIndex = 4;
             this.numSpecialCharacters.Value = new decimal(new int[] {
             4,
@@ -108,19 +108,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 144);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(58, 225);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 17);
+            this.label2.Size = new System.Drawing.Size(299, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Number of Special Characters";
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(39, 274);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Location = new System.Drawing.Point(58, 428);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(100, 28);
+            this.btnExit.Size = new System.Drawing.Size(150, 44);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -128,17 +128,19 @@
             // 
             // txtAllowedCharacters
             // 
-            this.txtAllowedCharacters.Location = new System.Drawing.Point(259, 205);
+            this.txtAllowedCharacters.Location = new System.Drawing.Point(388, 320);
+            this.txtAllowedCharacters.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAllowedCharacters.Name = "txtAllowedCharacters";
-            this.txtAllowedCharacters.Size = new System.Drawing.Size(228, 22);
+            this.txtAllowedCharacters.Size = new System.Drawing.Size(340, 31);
             this.txtAllowedCharacters.TabIndex = 7;
             this.txtAllowedCharacters.Text = "@ # * ( ) + = { } / ? ~ ; , . - _";
+            this.txtAllowedCharacters.TextChanged += new System.EventHandler(this.txtAllowedCharacters_TextChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(523, 321);
+            this.ClientSize = new System.Drawing.Size(784, 502);
             this.Controls.Add(this.txtAllowedCharacters);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label2);
@@ -147,7 +149,7 @@
             this.Controls.Add(this.numPasswordLength);
             this.Controls.Add(this.txtGeneratedPassword);
             this.Controls.Add(this.btnGeneratePassword);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
             this.Text = "Password Generator";
             ((System.ComponentModel.ISupportInitialize)(this.numPasswordLength)).EndInit();
